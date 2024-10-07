@@ -1,0 +1,62 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$azul_oscuro ;
+    
+  }
+  
+  .tablink {
+    background-color: v.$azul_oscuro ;
+    color: v.$blanco;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    margin: 0 10px; 
+    border-radius: 5px;
+  }
+  
+  .tablink:hover {
+    background-color: v.$celeste;
+  }
+
+ 
+.tabcontent-wrapper {
+    position: relative; 
+   
+  }
+  
+  .separador{
+    margin-bottom: 58rem;
+    
+  }
+
+  .tabcontent {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+  
+
+  .tabcontent.active {
+    visibility: visible;  
+    opacity: 1;  
+  }
+  
+ 
+  .tablink.active {
+    background-color: v.$rosado;
+    color: v.$blanco;
+  }
+  

@@ -1,0 +1,37 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sobre-informacion{
+    @include m.contenedor;
+    @include m.tablet{
+      @include m.grid(2,5rem);
+    }
+}
+
+.contenido-informacion{
+    margin-top: 5rem;
+
+    h2{
+        margin-bottom: 2rem;
+    }
+
+    .fecha{
+        color: v.$morado;
+        font-weight: 700;
+    }
+}
+ul {
+    list-style-type: none; 
+    padding-left: 0;
+  }
+  
+li{
+    margin-bottom: 2rem;
+   
+}
+
+li:last-chil{
+    margin-bottom: 0;    
+}
+
+

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Guímarbot</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="logo-container">
+                <img class="logo" src="src/img/logo-ghímarbot.png" alt="logo">
+
+                <h1> GUIMARBOT </h1>
+            </div>
+            <nav class="navegacion-principal">
+                <a href="#">Cursos</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Contactanos</a>
+                <button class="btoscuro" id="bdark">Modo Oscuro</button>
+                <a href="sesion.html" class="btn-login">Iniciar Sesion</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!---------------  PORTADA    --------------->
+
+    <div class="portada">
+
+        <div class="contenedor contenido-portada">
+            <h1>Que esperas para unirte</h1>
+            <p><span class="destacado">Conviértete en el mejor profesional</span></p>
+            <p>Los cursos más completos</p>
+        </div>
+
+
+        <div class=" formulario">
+            <h2>¡Unete a nosotros!</h2>
+            <form>
+
+                <input type="text" placeholder="Nro. de dni">
+                <input type="text" placeholder="Nombre">
+                <input type="tel" placeholder="Teléfono móvil">
+                <input type="text" placeholder="Primer Apellido">
+                <input type="text" placeholder="Segundo Apellido">
+                <input type="email" placeholder="Correo Electrónico">
+
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+
+        <div class="imagen-portada">
+            <img src="src/img/Fondo.png" alt="portada">
+        </div>
+
+    </div>
+
+
+    <section class="sobre-informacion">
+
+        <div>
+            <img src="src/img/logo-ghimarbot-fondo.png" alt="logo-ghimarbot-fondo">
+        </div>
+        <div class="contenido-informacion">
+            <h2> ¡DESCUBRE UN MUNDO LLENO DE APRENDIZAJE!</h2>
+            <p class="fecha">CLASES MODELO GRATUITAS</p>
+            <p>
+            <ul>
+                <li></li><i class="fab fa-python"></i> Descubre los secretos de la programación con Python y crea juegos desde cero. </li>
+                <li>Explora la robótica, aprende a construir y programar robots.</li>
+                <li>Conoce sobre inversión y finanzas.</li>
+                <li>Estos cursos son 𝗚𝗥𝗔𝗧𝗨𝗜𝗧𝗢𝗦 y se ofrecen como CLASES MODELO GRATUITAS.</li>
+            </ul>
+            </p>
+        </div>
+    </section>
+
+
+    <!----------------BARRA DE NAVEGACIÓN -------------------->
+  
+    <div class="navbar"></div>
+    <button class="tablink" onclick="openCategory('General')">Noticias y Proyectos</button>
+    <button class="tablink" onclick="openCategory('Talleres')">Talleres y charlas</button>
+    <button class="tablink" onclick="openCategory('electronica')">Electronica programable</button>
+    <button class="tablink" onclick="openCategory('Web')">Desarrollo Web</button>
+    <button class="tablink" onclick="openCategory('curso')">Curso Python y Java</button>
+    </div>
+
+    <div class="separador">
+
+        <div class="tabcontent-wrapper ">
+            <div id="General" class="tabcontent active  ">
+                <div class="contenedor espaciado">
+                    <h2 class="titulo-boton">General</h2>
+                    <div class="Linea">
+                        <!--Tarjeta de noticias -->
+                        <div class="card-container">
+                            <div class="card" onclick="toggleInfo(this)">
+                                <div class="card-front">
+                                    <img src="src/img/fondo-proyecto.jpg" alt="Avatar">
+                                    <h2>PROYECTO - JOSÉ</h2>
+                                    <p>curso de Arduinventores de este verano</p>
+                                </div>
+                                <div class="card-back">
+
+
+                                    <iframe
+                                        src="https://www.facebook.com/plugins/video.php?height=316&href=https%3A%2F%2Fwww.facebook.com%2FGuimarbotPeru%2Fvideos%2F2110607899279594%2F&show_text=true&width=560&t=0"
+                                        width="260" height="431" style="border:none;overflow:hidden" scrolling="no"
+                                        frameborder="0" allowfullscreen="true"
+                                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                        allowFullScreen="true"></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta de noticias 2 -->
+                        <div class="card-container">
+                            <div class="card" onclick="toggleInfo(this)">
+                                <div class="card-front">
+                                    <img src="src/img/fondo-cpn.jpg" alt="Avatar">
+                                    <h2>ENTREVISTA</h2>
+                                    <p>Jorge revela cómo nuestra academia prepara a los niños para liderar el futuro
+                                        tecnológico</p>
+                                </div>
+                                <div class="card-back">
+                                    <iframe
+                                        src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FGuimarbotPeru%2Fvideos%2F3643470802594531%2F&show_text=true&width=476&t=0"
+                                        width="276" height="591" style="border:none;overflow:hidden" scrolling="no"
+                                        frameborder="0" allowfullscreen="true"
+                                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                        allowFullScreen="true"></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta de noticias 2 -->
+                        <div class="card-container">
+                            <div class="card" onclick="toggleInfo(this)">
+                                <div class="card-front">
+                                    <img src="src/img/fondo-noticia.jpg" alt="Avatar">
+                                    <h2>PROYECTO - LUCA ARONE</h2>
+                                    <p>Nuestros talentosos estudiantes de 14 años en GuímarBot</p>
+                                </div>
+                                <div class="card-back">
+                                    <iframe
+                                        src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FGuimarbotPeru%2Fvideos%2F1502423297263298%2F&show_text=true&width=476&t=0"
+                                        width="276" height="591" style="border:none;overflow:hidden" scrolling="no"
+                                        frameborder="0" allowfullscreen="true"
+                                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                        allowFullScreen="true"></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- BOTON 2 -->
+            <div id="Talleres" class="tabcontent ">
+                <div class="contenedor">
+                    <h2 class="titulo-boton">Talleres y charlas</h2>
+                    <iframe
+                        src="https://www.facebook.com/plugins/video.php?height=448&href=https%3A%2F%2Fwww.facebook.com%2FGuimarbotPeru%2Fvideos%2F2413904032084350%2F&show_text=false&width=560&t=0"
+                        width="360" height="248" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        allowFullScreen="true">
+                    </iframe>
+
+                    <iframe
+                        src="https://www.facebook.com/plugins/video.php?height=448&href=https%3A%2F%2Fwww.facebook.com%2FGuimarbotPeru%2Fvideos%2F531201932304994%2F&show_text=false&width=560&t=0"
+                        width="360" height="248" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        allowFullScreen="true">
+                    </iframe>
+
+                    <iframe
+                        src="https://www.facebook.com/plugins/video.php?height=448&href=https%3A%2F%2Fwww.facebook.com%2FGuimarbotPeru%2Fvideos%2F483805207237437%2F&show_text=false&width=560&t=0"
+                        width="360" height="248" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        allowFullScreen="true"></iframe>
+                </div>
+            </div>
+            <!-- FIN DEL BOTON 2 -->
+
+            <!-- FIN DEL BOTON 3 -->
+
+            <div id="electronica" class="tabcontent">
+                <div class="contenedor">
+                    <h2 class="titulo-boton">Electronica programable</h2>
+                    <div class="card-container">
+                        <!-- Tarjeta 1 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-electronica-1.jpg" alt="Curso Elearning" class="course-image">
+                            <div class="course-info">
+                                <h3>Robótica y programación de juegos – Python</h3>
+                                <span class="tag">Electronica programable</span>
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 2 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-electronica-2.jpg" alt="Curso Elearning" class="course-image">
+                            <div class="course-info">
+                                <h3>Robótica y programación de juegos – Python</h3>
+                                <span class="tag">Electronica programable</span>
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 2 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-electronica-2.jpg" alt="Curso Elearning" class="course-image">
+                            <div class="course-info">
+                                <h3>Robótica y programación de juegos – Python</h3>
+                                <span class="tag">Electronica programable</span>
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN DEL BOTON 3 -->
+            <!--  BOTON 4 -->
+            <div id="Web" class="tabcontent">
+                <div class="contenedor">
+                    <h2 class="titulo-boton">Desarrollo Web</h2>
+                    <div class="card-container">
+                        <!-- Tarjeta 1 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-html.jpg" alt="Curso Elearning" class="course-image">
+                            <div class="course-info">
+                                <h3>Desarrollo Web – Html</h3>
+                                <span class="tag">Curso Html</span>
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 2 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-css.png" alt="Curso Online" class="course-image">
+                            <div class="course-info">
+                                <h3>Desarrollo Web – Css</h3>
+                                <span class="tag">Curso Css</span>
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 3 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-js.jpg" alt="Curso Online" class="course-image">
+                            <div class="course-info">
+                                <h3>Desarrollo Web – JavaScript</h3>
+                                <span class="tag">Curso JavaScript</span> <span class="tag">Básico</span>
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 4 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-js-1.jpg" alt="Curso Online" class="course-image">
+                            <div class="course-info">
+                                <h3>Desarrollo Web – JavaScript</h3>
+                                <span class="tag">Curso JavaScript</span> <span class="tag">Avanzado</span>
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 5 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-desarrolloweb.jpg" alt="Curso Online" class="course-image">
+                            <div class="course-info">
+                                <h3>Desarrollo Web</h3>
+                                <span class="tag">Curso Html - Css - JavaScript</span>
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- FIN DEL BOTON 4 -->
+            <!-- BOTON 5 -->
+            <div id="curso" class="tabcontent">
+                <div class="contenedor">
+                    <h2 class="titulo-boton">Proyectos</h2>
+                    <div class="card-container">
+                        <!-- Tarjeta 1 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-python.jpg" alt="Curso Elearning" class="course-image">
+                            <div class="course-info">
+                                <h3>Programacion de juegos – Python</h3>
+                                <span class="tag">Curso de Python</span> <span class="tag">básico</span>
+
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 2 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-python-2.jpg" alt="Curso Elearning" class="course-image">
+                            <div class="course-info">
+                                <h3>Programacion de juegos – Python</h3>
+                                <span class="tag">Curso de Python</span> <span class="tag">avanzado</span>
+
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 3 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-python-3.jpg" alt="Curso Elearning" class="course-image">
+                            <div class="course-info">
+                                <h3>Data science – Python</h3>
+                                <span class="tag">Curso de Python</span>
+
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 4 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-java.jpg" alt="Curso Elearning" class="course-image">
+                            <div class="course-info">
+                                <h3>Programación – Java</h3>
+                                <span class="tag">Curso de Java</span> <span class="tag">Básico</span>
+
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta 5 -->
+                        <div class="course-card">
+                            <img src="src/img/fondo-java-2.png" alt="Curso Elearning" class="course-image">
+                            <div class="course-info">
+                                <h3>Programación – Java</h3>
+                                <span class="tag">Curso de Java</span> <span class="tag">Avanzado</span>
+
+                                <p class="course-duration">
+                                    <i class="icon-time"></i>
+                                    Edades de 5 a 18 años <br>
+                                    vacantes limitadas
+                                </p>
+                                <a href="sesion.html"> <button class="course-button">Comenzar ahora</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- FIN DEL BOTON 5 -->
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Columna 1: Logo y respaldo -->
+            <div class="footer-column">
+                <img src="src/img/logo-ghímarbot.png" alt="CodiGo Logo" style="width: 120px;">
+            </div>
+
+            <!-- Columna 2: CodiGo -->
+            <div class="footer-column">
+                <h3>Desarrollo web</h3>
+                <ul>
+                    <li><a href="#">Html</a></li>
+                    <li><a href="#">Css</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Bootcamps -->
+            <div class="footer-column">
+                <h3>Cursos</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-python"></i> Python para Database</a></li>
+                    <li><a href="#"><i class="fab fa-java"></i> Desarrollo Web Fullstack con Java</a></li>
+                    <li><a href="#"> Desarrollo de Videojuegos</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Redes Sociales -->
+            <div class="footer-column">
+                <h3>Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i>Ghímarbot</a>
+                    <a href="#"><i class="fab fa-instagram"></i>Ghímarbot</a>
+                    <a href="#"><i class="fab fa-youtube"></i>Ghímarbot</a>
+                    <a href="#"><i class="fab fa-tiktok"></i>Ghímarbot</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="main.js"></script>
+    <script src="blackmode.js"></script>
+</body>
+
+</html>
