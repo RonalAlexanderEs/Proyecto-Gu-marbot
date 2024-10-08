@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss","base/_variables.scss"],"names":[],"mappings":"AAEA,KACI,kCCHc,CDId,wBAAA,CACA,iBAAA","file":"app.css","sourcesContent":["@use 'base/variables' as v;\r\n\r\nbody{\r\n    font-family: v.$fuente_principal;\r\n    font-optical-sizing: auto;\r\n    font-style: normal;\r\n}","$fuente_principal:\"Montserrat\", system-ui;"]}

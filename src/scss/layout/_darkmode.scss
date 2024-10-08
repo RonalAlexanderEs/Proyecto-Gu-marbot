@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+body.darkmode {
+    background-color: v.$negro;
+    color: v.$blanco;
+}
+
+
+
+.btoscuro {
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem;
+    border: none;
+    background: transparent;
+}
+
+.btoscuro:hover{
+    background-color: v.$negro;
+    color: v.$blanco;
+}
